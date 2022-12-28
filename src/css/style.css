@@ -1,0 +1,533 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: barlow;
+}
+
+.registration {
+  padding: 70px 0;
+  background: #EFF6FF;
+}
+.registration .container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.registration .container--mini {
+  max-width: 500px;
+}
+.registration .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/bg.jpg), #fcfcfc;
+  background-repeat: no-repeat;
+  background-size: 53% 100%;
+  background-position: left top;
+  height: 905px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.registration__main {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.registration__logo {
+  -ms-flex-preferred-size: 53%;
+      flex-basis: 53%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.registration__logo img {
+  max-width: 150px;
+  margin-left: 55px;
+  margin-top: 47px;
+  height: 22px;
+}
+.registration .header {
+  font-weight: 500;
+  color: #2A4A5C;
+}
+.registration__header {
+  margin-top: 70px;
+  font-size: 26px;
+}
+.registration .subheader {
+  font-weight: 500;
+  color: #7B8A92;
+}
+.registration__subheader {
+  font-size: 18px;
+}
+.registration__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+.registration__links a {
+  text-decoration: none;
+}
+.registration__link {
+  width: 225px;
+  height: 35px;
+  background-color: #255A9B;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+}
+.registration__link--right {
+  margin-left: 30px;
+  background-color: #0076B6;
+}
+.registration__link img {
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 25px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.registration__link:hover img, .registration__link:focus img {
+  height: 23px;
+}
+.registration__divider {
+  text-align: center;
+  margin-top: 50px;
+}
+.registration__divider span {
+  font-size: 10px;
+  font-weight: 500;
+}
+.registration__divider:before, .registration__divider:after {
+  content: "";
+  height: 1px;
+  background-color: #dce0e3;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100px;
+}
+.registration__divider:before {
+  right: 0.5em;
+}
+.registration__divider:after {
+  left: 0.5em;
+}
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+.registration__input {
+  position: relative;
+}
+.registration__input:last-child {
+  margin-left: 30px;
+}
+.registration__input .input {
+  width: 225px;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 16px;
+  outline: none;
+  border: 1px solid #dce0e3;
+  font-size: 15px;
+  font-weight: 500;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+.registration__input .input:hover {
+  -webkit-box-shadow: 0 0 5px 5px #3698FB;
+          box-shadow: 0 0 5px 5px #3698FB;
+}
+.registration__input .input:focus {
+  border-left-color: #32a1ce;
+  border-left-width: 2px;
+}
+.registration__input .floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 4px;
+  left: 10px;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7B8A92;
+}
+.registration__investor-header {
+  font-size: 20px;
+  margin-top: 55px;
+}
+.registration__investor-subheader {
+  font-size: 13px;
+  margin-top: 15px;
+}
+.registration .checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.registration__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 430px;
+}
+.registration__checkbox-item {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.registration__checkbox-item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.registration__checkbox-item label:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #dce0e3;
+  border-radius: 100%;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+}
+.registration__checkbox-item .checkbox:checked + label:before {
+  border: 2px solid #3698FB;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #3698FB;
+          box-shadow: inset 0px 0px 0px 3px #3698FB;
+}
+.registration__checkbox-item .info:after {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #b7c0c4;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: 15px;
+  background-image: url(../icons/info.png);
+  cursor: pointer;
+}
+.registration .checkbox:not(:disabled):not(:checked) + label:hover::before {
+  background-color: #dce0e3;
+  cursor: pointer;
+}
+.registration__hint {
+  width: 265px;
+  height: 78px;
+  background-color: #fff;
+  margin-top: 30px;
+  color: #AFAFAF;
+  -webkit-box-shadow: 0px 10px 23px -5px rgb(222, 222, 222);
+          box-shadow: 0px 10px 23px -5px rgb(222, 222, 222);
+  margin-bottom: 30px;
+  padding: 10px 0 10px 7px;
+  font-size: 14px;
+  border-radius: 7px;
+}
+.registration__terms {
+  color: #AFAFAF;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.registration__terms a {
+  color: #3698FB;
+  margin-left: 5px;
+  -webkit-box-shadow: inset 0 0 0 0 #3698FB;
+          box-shadow: inset 0 0 0 0 #3698FB;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+.registration__terms a:hover, .registration__terms a:focus {
+  -webkit-box-shadow: inset 100px 0 0 0 #3698FB;
+          box-shadow: inset 100px 0 0 0 #3698FB;
+  color: white;
+}
+.registration__terms label {
+  color: #AFAFAF;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.registration__terms label:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #dce0e3;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.registration__terms .checkbox:checked + label:before {
+  background-color: #3698FB;
+}
+.registration__create {
+  margin-top: 50px;
+  width: 250px;
+  background-color: #3698FB;
+  border: none;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.registration__create:hover, .registration__create:focus {
+  font-size: 16px;
+  -webkit-box-shadow: 0px 0px 5px 1px #3698FB;
+          box-shadow: 0px 0px 5px 1px #3698FB;
+}
+
+@media (max-width: 1199.98px) {
+  .registration__link {
+    width: 190px;
+  }
+  .registration__link img {
+    margin-right: 13px;
+  }
+  .registration .container--mini {
+    max-width: 418px;
+  }
+  .registration .input {
+    width: 190px;
+  }
+  .registration .info:after {
+    margin-right: 2px;
+  }
+}
+@media (max-width: 991.98px) {
+  .registration .container--mini {
+    max-width: 300px;
+  }
+  .registration__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  .registration__link {
+    margin-bottom: 15px;
+  }
+  .registration__link:last-child {
+    margin-left: 0;
+  }
+  .registration__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+  }
+  .registration__input {
+    margin-bottom: 15px;
+  }
+  .registration__input:last-child {
+    margin-left: 0px;
+  }
+  .registration__input .input {
+    height: 35px;
+    padding-top: 10px;
+  }
+  .registration__input .floating-label {
+    position: absolute;
+    pointer-events: none;
+    top: 2px;
+    left: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #7B8A92;
+  }
+  .registration__checkbox {
+    display: block;
+    margin-top: 25px;
+    width: 200px;
+  }
+  .registration__checkbox label {
+    margin-bottom: 5px;
+  }
+  .registration__investor-header {
+    margin-top: 20px;
+  }
+  .registration__divider {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .registration__header {
+    margin-top: 20px;
+  }
+  .registration__terms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration__create {
+    margin-top: 35px;
+  }
+  .registration__hint {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  .registration .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+    height: 905px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .registration__main {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .registration__logo {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
+  .registration__logo img {
+    display: none;
+  }
+  .registration__header {
+    text-align: center;
+    margin-top: 45px;
+  }
+  .registration .header {
+    color: white;
+  }
+  .registration .header--black {
+    color: black;
+  }
+  .registration__subheader {
+    text-align: center;
+  }
+  .registration .subheader {
+    color: #f7f2f2;
+  }
+  .registration .subheader--black {
+    color: black;
+  }
+  .registration__link {
+    border: solid 2px black;
+  }
+  .registration__checkbox {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .registration__checkbox-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .registration__checkbox-item label:before {
+    content: "";
+    border: 2px solid black;
+  }
+  .registration .info:after {
+    border: 1px solid black;
+    background-image: url(../icons/info-black.png);
+  }
+  .registration__terms {
+    margin-top: 20px;
+  }
+  .registration__terms label {
+    color: black;
+    font-weight: 600;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .registration__terms a {
+    color: black;
+    font-weight: 500;
+  }
+  .registration__terms .checkbox:checked + label:before {
+    border: solid white;
+    background-color: black;
+  }
+  .registration__hint {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,193 @@
+@media (max-width: 1199.98px) {
+    .registration {
+        &__link {
+            width:190px;
+            img {
+                margin-right: 13px;
+            }
+        }
+        .container{
+            &--mini {
+                max-width:418px;
+            }
+        }
+        .input {
+            width:190px;
+
+        }
+        .info {
+            &:after {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .registration {
+        .container{
+            &--mini {
+                max-width:300px;
+            }
+        }
+        &__links {
+            flex-direction: column;
+            align-items:center;     
+            margin-top: 30px;
+
+        }
+        &__link {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+        &__form {
+            flex-direction: column;
+            align-items:center;   
+            margin-top: 0;  
+        }
+        &__input {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-left: 0px;
+                }
+            .input {
+                height: 35px;
+            padding-top: 10px;
+
+            }
+            .floating-label {
+                position: absolute;
+                pointer-events: none;
+                top: 2px;
+                left: 10px;
+                font-size: 10px;
+                font-weight: 500;
+                color:#7B8A92;
+            }
+            }
+        &__checkbox {
+            display: block;  
+            margin-top: 25px;
+            width:200px; 
+            label {
+                margin-bottom: 5px;
+            }
+            
+        }
+        &__investor-header {
+            margin-top: 20px;
+        }
+        &__divider {
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        &__header {
+            margin-top:20px
+        }
+        &__terms{
+            flex-direction: column;
+        }
+        &__create {
+            margin-top: 35px;
+        }
+        &__hint {
+            margin-top: 15px;
+        }
+    }
+
+@media (max-width: 767.98px) {
+    .registration {
+        .wrapper {
+            display:flex;
+            background: url(../img/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: left top;
+            height: 905px;
+            justify-content: space-between;
+            text-align: center;
+        }
+        &__main {
+            flex-basis:100%;
+            
+        }
+        &__logo {
+            flex-basis:0%;
+            img {
+                display: none; 
+            }
+        }
+        &__header {
+            text-align: center;
+            margin-top: 45px;
+        }
+        .header {
+            color:white;
+            &--black {
+                color:black; 
+            }
+        }
+        &__subheader {
+            text-align: center;
+        }
+        .subheader {
+            color: #f7f2f2;
+            &--black {
+                color:black; 
+            }
+        }
+        &__link {
+            border:solid 2px black;
+        }
+        &__checkbox {
+            margin: 0 auto;  
+            margin-top: 15px;
+            margin-bottom: 20px;
+
+            &-item {
+                justify-content: start;   
+
+                label {
+
+                    &:before {
+                        content: '';
+                        border: 2px solid black;
+                    }
+                }
+       
+            }
+
+        }
+        .info {
+
+            &:after {
+                border: 1px solid black;
+                background-image: url(../icons/info-black.png);
+            }
+        }
+        &__terms {
+            margin-top: 20px;
+            
+            label {
+                color:black;
+                font-weight: 600;
+                align-items:baseline;
+            }
+            a {
+                color:black;
+                font-weight: 500;   
+            }
+            .checkbox:checked +label:before {
+                border:solid white;
+                background-color: black;          
+             }
+        }
+        &__hint {
+            margin: 0 auto; 
+        }
+        
+}
+}
+}
